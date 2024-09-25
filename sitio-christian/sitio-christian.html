@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Christian</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #FE5F00;
+        }
+        .header h1 {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .videos{
+            padding: 15px;
+            margin-top: 30px; /* Margen superior para separar secciones */
+            background-color: #d6d6d6;
+            border-radius: 10px; /*Bordes redondeados*/
+            border: 1px solid black; /* Borde de 2px, sólido, color negro */
+
+        }
+
+        .audio{
+            padding: 15px;
+            margin-top: 30px; /* Margen superior para separar secciones */
+            background-color: #d6d6d6;
+            border-radius: 10px; /*Bordes redondeados*/
+            border: 1px solid black; /* Borde de 2px, sólido, color negro */
+        }
+
+        .mapa{
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGOS -->
+    <header class="header">
+        <img src="imgs/tecnmlogo.png" alt="Logo Tecnm" class="logo">
+        <h1>SITIO CHRISTIAN BAZÁN</h1>
+        <img src="imgs/itcuautla.png" alt="Logo ITC" class="logo">
+    </header>
+
+    <!-- SECCIÓN "Sobre mí" -->
+    <section style="padding: 20px;">
+        <div style="display: flex;">
+            <div style="flex: 1 1 25%; text-align: center; border: 1px solid black; border-radius: 10px; padding: 10px;">
+                <img src="imgs/itcuautla.png" alt="Mi foto" style="width: 100%; max-width: 200px; height: auto; border-radius: 10px;">
+                <h2>Christian Emmanuel Bazán Calderón</h2>
+            </div>
+            
+            <!-- Sección derecha "Sobre mí" -->
+            <div style="flex: 1 1 75%; padding-left: 20px;">
+                <h2>Sobre mí</h2>
+                <p>
+                    Me llamo Christian Bazán, tengo 22 años y vivo en Cuautla, Morelos. Soy estudiante de noveno semestre de la carrera de ingeniería en sistemas
+                    computacionales en el Tecnológico Nacional de México campus Cuautla.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--VIDEOS-->
+    <section class="videos">
+        <h2>Videos</h2>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <!--Primer video-->
+            <div style="width: 48%; text-align: center;">
+                <h3>Enjambre - Cámara de faltas (noches de salón)</h3>
+                <video controls style="width: 100%; max-width: 600px;">
+                    <source src="imgs/Enjambre-CámaraDeFaltas-NochesDeSalón.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+
+            <!--Segundo-->
+            <div style="width: 48%; text-align: center;">
+                <h3>Twenty One Pilots - Midwest Indigo</h3>
+                <video controls style="width: 100%; max-width: 600px;">
+                    <source src="imgs/TOP-MidwestIndigo.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!--AUDIO-->
+    <section class="audio">
+        <h2>Audio</h2>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <!-- Primer audio -->
+            <div style="width: 30%; text-align: center; margin: 10px;">
+                <h3>Milky Chance - Synchronize</h3>
+                <audio controls>
+                    <source src="imgs/Synchronize.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+
+            <!-- Segundo audio -->
+            <div style="width: 30%; text-align: center; margin: 10px;">
+                <h3>Twenty One Pilots - Navigating</h3>
+                <audio controls>
+                    <source src="imgs/Navigating.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+
+            <!-- Tercer audio -->
+            <div style="width: 30%; text-align: center; margin: 10px;">
+                <h3>Paramore - The news </h3>
+                <audio controls>
+                    <source src="imgs/The News.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!--MAPA SENSITIVO-->
+    <section>
+        <table border="2" style="height: 220; padding: 20px; border: 20px;"  ><tr><td align="center"> 
+            <map name="mapa1"> 
+                <area alt="Pulsa para ver la página de mis amigos" shape="rect" coords="0,180,110,90" href="area1.html"> 
+                <area alt="Pulsa para ver mi novia" shape="rect" coords="110,90,220,180" href="area2.html"> 
+                <area alt="Pulsa para conocer a mi Familia" shape="rect" coords="110,0,220,90" href="area3.html"> 
+                <area alt="Pulsa para conocer mi trabajo" shape="rect" coords="0,0,110,90" href="area4.html"> 
+            </map> 
+            <img style="border: 2px;" src="imgs/itcuautla.png" width="180" height="220" alt="Mapa de imágenes. Pulsa en cada una de los círculos." border="0" usemap="#mapa1"> 
+            <br> 
+            Pulsa en los círculos para acceder a las secciones! 
+            </td></tr></table>
+    </section>
+
+
+</body>
+</html>
